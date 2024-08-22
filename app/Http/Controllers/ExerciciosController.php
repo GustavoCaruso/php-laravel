@@ -42,4 +42,68 @@ class ExerciciosController extends Controller
         
         return view("exer3resp", compact('resultado'));
     }
+
+    public function mostrarFormulario4(){
+        return view('exer4');
+    }
+
+    public function calcularFormulario4(Request $request){
+        $valor1 = $request->input("valor1");
+        $valor2 = $request->input("valor2");
+        $resultado = $valor1 / $valor2;
+        
+        return view("exer4resp", compact('resultado'));
+    }
+
+    public function mostrarFormulario5(){
+        return view('exer5');
+    }
+
+    public function calcularFormulario5(Request $request){
+        $valor1 = $request->input("valor1");
+        $valor2 = $request->input("valor2");
+        $valor3 = $request->input("valor3");
+        $resultado = ($valor1 + $valor2 + $valor3) / 3;
+        
+        return view("exer5resp", compact('resultado'));
+    }
+
+    public function mostrarFormulario6(){
+        return view('exer6');
+    }
+
+    public function calcularFormulario6(Request $request){
+        $valor1 = $request->input("valor1");
+        
+        $resultado = ($valor1 * 9/5) + 32;
+        
+        return view("exer6resp", compact('resultado'));
+    }
+
+    public function mostrarFormulario7(){
+        return view('exer7');
+    }
+
+    public function calcularFormulario7(Request $request){
+        $valor1 = $request->input("valor1");
+        
+        $resultado = ($valor1 - 32) *5 /9 ;
+        
+        return view("exer7resp", compact('resultado'));
+    }
+
+    public function mostrarFormulario8(){
+        return view('exer8');
+    }
+
+    public function calcularFormulario8(Request $request){
+        $valor1 = $request->input("valor1");
+        $valor2 = $request->input("valor2");
+        
+        $resultado = $valor1 * $valor2 ;
+        
+        return view("exer8resp", compact('resultado'));
+    }
+
+    
 }

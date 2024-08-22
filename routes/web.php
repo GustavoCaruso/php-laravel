@@ -35,3 +35,23 @@ Route::post('/exer2resp', [ExerciciosController::class, 'calcularFormulario2']);
 Route::get('/exer3', [ExerciciosController::class, 'mostrarFormulario3']);
 
 Route::post('/exer3resp', [ExerciciosController::class, 'calcularFormulario3']);
+
+Route::get('/exer4', [ExerciciosController::class, 'mostrarFormulario4']);
+
+Route::post('/exer4resp', [ExerciciosController::class, 'calcularFormulario4']);
+
+Route::get('/exer5', [ExerciciosController::class, 'mostrarFormulario5']);
+
+Route::post('/exer5resp', [ExerciciosController::class, 'calcularFormulario5']);
+
+Route::get('/exer6', [ExerciciosController::class, 'mostrarFormulario6']);
+
+Route::post('/exer6resp', [ExerciciosController::class, 'calcularFormulario6']);
+
+Route::get('/exer7', [ExerciciosController::class, 'mostrarFormulario7']);
+
+Route::post('/exer7resp', [ExerciciosController::class, 'calcularFormulario7']);
+
+Route::get('/exer8', [ExerciciosController::class, 'mostrarFormulario8']);
+
+Route::post('/exer8resp', [ExerciciosController::class, 'calcularFormulario8']);
