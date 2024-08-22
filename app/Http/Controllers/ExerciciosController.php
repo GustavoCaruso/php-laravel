@@ -105,5 +105,29 @@ class ExerciciosController extends Controller
         return view("exer8resp", compact('resultado'));
     }
 
+
+    public function mostrarFormulario9(){
+        return view('exer9');
+    }
+
+
+    public function calcularFormulario9(Request $request){
+        $valor1 = $request->input('Valor1');
+        $resultado = ($valor1 * $valor1) * 3.14159 ;
+        return view('exer9resp', compact('resultado'));
+    }
+
+
+    public function mostrarFormulario10(){
+        return view('exer10');
+    }
+
+
+    public function calcularFormulario10(Request $request){
+        $valor1 = $request->input('valor1'); 
+        $valor2 = $request->input('valor2'); 
+        $resultado = 2 * ($valor1 + $valor2);
+        return view('exer10resp', compact('resultado'));
+    }
     
 }
